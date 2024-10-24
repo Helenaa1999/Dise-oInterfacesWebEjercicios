@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Etiquetas</title>
+    </head>
+    <body>
+        <div>
+            <h1>Formulario de inscripción</h1>
+            <img src="./Img/88450.png" alt="Imágen Formulario">
+        </div>
+        <div>
+            <p>Este formulario sirve para inscribirse en el campamento del verano 2025</p>
+        </div>
+        <div>
+            <form action="/enviarFormulario">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" required>
+                <br>
+                <label for ="fechaNacimiento">Fecha nacimiento</label>
+                <input type="date" required>
+                <br> 
+                <label for="alergias">Observaciones</label>
+                <textarea name="alergias" id="alergias">Escribe las alergías o cualquier tipo de observación que debamos tener en cuenta</textarea>
+                <br>
+                <label for="nadar">¿Sabe nadar?</label>
+                <label for="nadar">Sí</label>
+                <input type="radio" id="nadar" name="nadar" value="si">
+                <label for="nadar">No</label>
+                <input type="radio" id="nadar" name="nadar" value="no">
+                <br>
+                <button type="submit">Enviar formulario</button>
+            </form>   
+        </div>
+
+    </body>
+</html>
