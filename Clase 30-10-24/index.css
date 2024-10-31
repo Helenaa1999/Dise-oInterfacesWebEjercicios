@@ -1,0 +1,52 @@
+/*
+    Selector{ 
+        propiedad1: valor1;
+        propiedad2: valor2;
+    }
+*/
+
+p{
+    color:blue;
+    font-size: 18px;
+}
+
+.mi_clase{
+    font-size: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+    color:green;
+}
+
+#mi_id{
+    font-weight: bold;
+    font-size: italic;
+    text-decoration: underline;
+    color:red;
+    font-size: 18px;
+}
+
+div p{
+    color: blueviolet;
+}
+
+a:hover{
+    color:olivedrab;
+    font-size: 80px;
+    cursor:pointer;
+}
+
+.caja{
+    width:300px;
+    padding:20px;
+    border:1px solid black;
+    margin:15px;
+}
+
+ul{
+    list-style-type: square;
+    padding: 20px;
+}
+ul:hover{
+    color:greenyellow;
+    font-size: 18px;
+}

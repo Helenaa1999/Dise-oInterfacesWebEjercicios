@@ -1,0 +1,19 @@
+article{
+    display:flex;
+    justify-content: center;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+input{
+    border:solid 1px;
+    padding: 10px;
+}
+textarea{
+    border:solid 1px;
+    padding: 10px;
+}
+button:hover{
+    background-color: lightblue;
+}
