@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    display:flex;
+    justify-content: center;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:75%;
+    background-color: #C5D3E8 ;
+    padding:30px;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:10px;
+}
+label{
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.item{
+    padding:5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media(max-width:1080px){
+    form {
+        width:50%;
+    }
+}
+
+@media(max-width:720px){
+    form{
+        width: 100%;
+    }
+}

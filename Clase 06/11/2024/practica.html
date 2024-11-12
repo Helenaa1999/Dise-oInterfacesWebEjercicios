@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de inscripción</title>
+        <link rel="stylesheet" href="./practica.css">
+    </head>
+    <body>
+        <form action="inscripcion">
+            <div>
+                <label class="item" for="nombre">Nombre: </label>
+                <input class="item" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label class="item" for="apellidos">Apellidos: </label>
+                <input class="item" type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div>
+                <label class="item" for="fechaNacimiento">Fecha de nacimiento: </label>
+                <input class="item" type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <div>
+                <label class="item" for="curso">Curso al que quiere inscribirse:</label>
+                <select class="item" name="curso" id="curso" required>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                    <option value="DAM">DAM</option>
+                </select>
+            </div>
+            <div>
+                <label class="item" for="observaciones">Observaciones: </label>
+                <textarea class="item" name="observaciones" id="observaciones" rows="4" cols="50">Escribe cualquier tipo de comentarios que sean importantes de saber</textarea>
+            </div>
+            <div>
+                <button type="submit" class="item">Enviar</button>
+            </div>
+        </form>
+    </body>
+</html>

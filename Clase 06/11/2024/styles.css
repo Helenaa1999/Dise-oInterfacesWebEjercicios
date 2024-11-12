@@ -1,0 +1,53 @@
+/*
+Estructura básica de media query
+*/
+
+/*
+@media(condición){
+    estilos css
+    estilos para el dispositivo que cumpla con la condición
+}
+*/
+.caja{
+    width: 50%;
+    height: 100px;
+    margin: 1em auto;
+    background-color:aquamarine;
+}
+
+
+@media(max-width:760px){
+    .caja{
+        width: 100%;
+        color:red;
+    }
+}
+
+/*
+Definición de Flexbox
+flex-direction:
+Esta propiedad define la dirección en la que los elementos flexibles se alinean dentro del contenedor. Puede ser en fila (por defecto), columna, o sus versiones inversas
+Valores comunes:
+    row: los elementos se alinean en fila.
+    column: los elementos se alinean en columna.
+justify-content:
+Esta propiedad define cómo se alinean los elementos en el eje principal (fila). Puede ser en línea (por defecto), alineando al principio, centrado, al final, alineado a la derecha,
+equitativa, alineado a la izquierda, o en línea inversa
+    -flex-start:los elementos se alinean al principio
+    -center: los elementos se alinean en el centro.
+    -space-between: se crea el mismo espacio entre ellos
+
+align-self:
+Propiedad que alinea de forma individual
+    */
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item{
+    padding:10px;
+    margin:5px;
+    background-color: lightcoral;
+}
