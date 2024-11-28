@@ -1,0 +1,71 @@
+.area{
+    display: grid;
+    grid-template-areas: 
+    "a b c d"
+    "e f g h"
+    "i j k l";
+    grid-template-columns: 1fr 2fr 3fr 4fr;
+    gap:10px;
+}
+.a{
+    grid-area: a;
+    background-color: rgb(95, 216, 216);
+}
+.b{
+    grid-area: b;
+    background-color: rgb(232, 240, 118); 
+}
+.c{
+    grid-area: c;
+    background-color: rgb(240, 136, 118); 
+}
+.d{
+    grid-area: d;
+    background-color: rgb(137, 245, 146); 
+}
+.e{
+    grid-area: e;
+    background-color: rgb(108, 136, 189); 
+}
+.f{
+    grid-area: f;
+    background-color: rgb(186, 155, 226); 
+}
+.g{
+    grid-area: g;
+    background-color: rgb(223, 163, 231); 
+}
+.h{
+    grid-area: h;
+    background-color: rgb(240, 148, 209); 
+}
+.i{
+    grid-area: i;
+    background-color: rgb(233, 120, 129); 
+}
+.j{
+    grid-area: j;
+    background-color: rgb(240, 173, 118); 
+}
+.k{
+    grid-area: k;
+    background-color: rgb(161, 243, 225); 
+}
+.l{
+    grid-area: l;
+    background-color: rgb(185, 97, 97); 
+}
+.content{
+    height: 50px;
+}
+
+@media(max-width:700px){
+    .area{
+        grid-template-columns: 4fr 3fr 2fr 1fr;
+    }
+}
+@media(max-width:400px){
+    .area{
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+    }
+}

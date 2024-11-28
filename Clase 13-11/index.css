@@ -1,0 +1,43 @@
+.container{
+    display:grid;
+    grid-template-rows: 100px 200px; /*Le damos dos valores porque hemos creado dos filas*/
+    grid-template-columns: 1fr 2fr;
+    background-color: red;
+}
+
+.container2{
+    display: grid;
+    justify-items: center; /*centrar de forma horizontal los items dentro de la celda*/
+    align-items: stretch; /*estirar los items para que ocupen todo lo alto de la celda*/
+    justify-content: space-around;
+    align-content: center;
+    background-color: blueviolet;
+}
+
+.area{
+    display:grid;
+    grid-template-areas:  /*Creamos una cuadrícula para cada elemento*/
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: green;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: yellow;
+}
+
+.content{
+    grid-area: content;
+    background-color: pink;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: purple;
+}

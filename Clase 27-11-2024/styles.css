@@ -1,0 +1,15 @@
+.carList{
+    margin-top: 20px;
+}
+
+.carItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carItem button{
+    margin-left: 10px;
+}
+
+/*Tarea: agregar estilos para que se vea más bonito y a su gusto la lista y los ítems*/
