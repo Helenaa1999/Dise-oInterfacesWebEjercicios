@@ -5,29 +5,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container mt-5">
-            <h2 class="mb-4">Formulario para Agregar y Eliminar Coches</h2>
+            <h2 class="mb-4 p-5 titulo text-center"> 🚗 Formulario para Agregar y Eliminar Coches 🚗</h2>
             <!--Tarea: convertir los input de precio y año a numérico-->
             <!--Formulario para agregar coches-->
             <form id="carForm" class="mb-4">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="" class="form-label">Marca</label>
+                            <label for="" class="form-label tituloApartado">Marca</label>
                             <input type="text" class="form-control" id="carBrand" placeholder="Marca del coche" required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div>
-                            <label for="carModel" class="form-label">Modelo</label>
+                            <label for="carModel" class="form-label tituloApartado">Modelo</label>
                             <input type="text" class="form-control" id="carModel" placeholder="Modelo de coche" required>  
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div>
-                            <label for="carYear" class="form-label">Año</label>
+                            <label for="carYear" class="form-label tituloApartado">Año</label>
                             <input type="text" class="form-control" id="carYear" placeholder="Año del coche" required>  
                         </div>
                     </div>
@@ -35,13 +40,13 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="carColor" class="form-label">Color</label>
+                            <label for="carColor" class="form-label tituloApartado">Color</label>
                             <input type="text" class="form-control" id="carColor" placeholder="Color del coche" required>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="mb-3">
-                            <label for="carFuel" class="form-label">Combustible</label>
+                            <label for="carFuel" class="form-label tituloApartado">Combustible</label>
                             <select class="form-select" id="carFuel"> <!--Utilizar una lista para mostrar las opciones del select-->
                                 <option value="">Selecciona el tipo de combustible</option>
                                 <option value="gasolina">Gasolina</option>
@@ -53,46 +58,48 @@
                     </div>
                     <div class="col-md-4">
                         <div>
-                            <label for="" class="form-label">Precio</label>
+                            <label for="" class="form-label tituloApartado">Precio</label>
                             <input type="text" class="form-control" id="carPrice" placeholder="Precio" required>  
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div>
-                            <label for="">Comentarios</label>
+                        <div class="divComentarios">
+                            <label for="" class="tituloApartado">Comentarios</label>
                             <textarea class="from-control" placeholder="Escribe cualquier comentario aquí" id="carTextArea"></textarea>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div>
-                            <label class="form-label" for="">Presupuesto arreglo</label>
+                            <label class="form-label tituloApartado" for="">Presupuesto arreglo</label>
                             <input type="range" class="form-range" id="carBudget">
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div>
-                            <label for="" class="form-label">Adjunte una imagen de su vehículo</label>
+                            <label for="" class="form-label tituloApartado">Adjunte una imagen de su vehículo</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <p>¿Es su coche nuevo? Indica sí si lo es, no si es de segunda mano</p>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="segundaMano" id="si">
-                            <label for="" class="form-check-label">Sí</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="segundaMano" id="no">
-                            <label for="" class="form-check-label">No</label>
-                        </div>
+                    <div class="col-md-6">
+                        <p class="tituloApartado">¿Es su coche nuevo? Indica sí si lo es, no si es de segunda mano</p>
+                        <div class="respuestasConsentimiento">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="segundaMano" id="si">
+                                <label for="" class="form-check-label">Sí</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="segundaMano" id="no">
+                                <label for="" class="form-check-label">No</label>
+                            </div>
+                        </div> 
                     </div>
-                    <div class="col-md-4">
-                        <label for="" class="form-label">Ciudad de residencia</label>
-                        <input class="form-control" list="ciudadOpciones" id="carCiudad" placeholder="Escribe la ciudad de residencia">
+                    <div class="col-md-6">
+                        <label for="" class="form-label tituloApartado">Ciudad de residencia</label>
+                        <input class="form-control" list="ciudadOpciones" id="carCiudad" placeholder="Escribe la ciudad de residencia" required>
                         <datalist id="ciudadOpciones">
                             <option value="Madrid">
                             <option value="Valencia">
@@ -105,27 +112,27 @@
                 </div>
                 <div class="row">
                     <div class="col.md-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="carConsentimiento">
+                        <div class="form-check divAceptarCondiciones">
+                            <input class="form-check-input" type="checkbox" id="carConsentimiento" required>
                             <label class="form-check-label" for="">Acepto los términos y las condiciones</label>
                         </div>
                 </div>
                 <!--Agregar 6 atributos más al formulario y que se vean en la tabla
                 Hay que agregar uin textarea, checkbox y el resto en inputs-->
-                <div class="col.md-12">
-                    <button type="submit" class="btn btn-primary">Agregar Coche</button>
+                <div class="col.md-12 divBoton">
+                    <button type="submit" class="btn btn-primary agregar">Agregar Coche</button>
                 </div>
             </form>
 
             <!--Lista de los coches-->
             <div class="carList">
                 <h3>Lista de coches</h3>
-                <ul id="carList">
+                <ul id="carList" class="list-group">
                     <!--Los coches añadidos aparecen aquí-->
                 </ul>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
