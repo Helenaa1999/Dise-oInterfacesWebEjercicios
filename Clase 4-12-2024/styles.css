@@ -1,0 +1,50 @@
+body{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #FFDDAE;
+}
+
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    background-color: #C6E7FF ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+}
+
+.comentarios{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.encabezado{
+    background-color: #FFB13D;
+    padding:10px;
+}
+
+.mensajeBienvenida{
+    width: 70%;
+    text-align: center;
+    padding-top:10px;
+}
+
+.tituloApartado{
+    background-color: #FFDDAE;
+    font-size: 20px;
+    padding: 10px;
+}
+

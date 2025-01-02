@@ -1,0 +1,53 @@
+header{
+    font-size: 2rem;
+}
+
+.navbar{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.nav-links{
+    gap:1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration:none;
+    padding:1rem;
+}
+
+.nav-links a:hover{
+    background-color: #4C585B;
+    border-radius: 1rem;
+
+}
+
+main{
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+.cardContainer{
+    display:flex;
+    gap: 3rem;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

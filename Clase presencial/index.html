@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aeropuerto - registro de vuelos</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Menú-horizontal-->
+        <nav class="navbar">
+            <div class="logo">Aeropuerto</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Registrar vuelo</a></li>
+                <li><a href="vuelo.html">Ver vuelo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!--formulario-->
+        <section class="form-section">
+            <h2>Registrar un vuelo</h2>
+            <form id="flightForm">
+                <!--Campo: número de vuelo-->
+                <div class="formGroup">
+                    <label for="flightNumber">Número de vuelo</label>
+                    <input type="text" id="flightNumber" required>
+                </div>
+                <!--Campo: destino-->
+                <div class="formGroup">
+                    <label for="destination">Destino</label>
+                    <input type="text" id="destination" required>
+                </div>
+                <!--Campo: fecha-->
+                <div class="formGroup">
+                    <label for="date">Fecha</label>
+                    <input type="text" id="date" required>
+                </div>
+                <!--Botón guardar-->
+                <button type="submit" class="btn">Guardar Vuelo</button>
+            </form>
+        </section>
+
+        <script src=script.js></script>
+    </body>
+</html>

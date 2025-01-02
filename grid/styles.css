@@ -1,0 +1,138 @@
+body{
+    margin:0;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Inconsolata", serif;
+    font-weight: 400;
+    font-size: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header{
+    grid-area: header;
+    background-color: #89A8B2;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+nav{
+    grid-area: nav;
+    background-color: #B3C8CF;
+    padding: 1rem;
+    display:flex;
+    justify-content: space-around;
+}
+
+nav a{
+    font-size: 20px;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: #c7d0d3;
+    border-radius: 1rem;
+}
+
+main{
+    grid-area: main;
+    background-color: #E5E1DA;
+    padding: 1rem;
+}
+
+main h3{
+    font-size: 3rem;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #9dadb8;
+    padding:30px;
+}
+
+aside iframe{
+    height: 500px;
+    width: 500px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: bisque;
+    height:200px
+}
+
+.card{
+    background-color: #F1F0E8;
+    border: solid 0.1rem black;
+    padding: 2rem;
+    box-shadow: 0 2px 4px gray;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.card img{
+    width: 250px;
+}
+
+.card h4{
+    font-size: 1.5rem;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.direccion{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    body{
+        margin:0;
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside aside"
+        "main main"
+        "footer footer";
+        grid-template-columns: 1fr 2fr;
+        font-family: "Inconsolata", serif;
+        font-weight: 400;
+        font-size: normal;
+        font-variation-settings: "wdth" 100;
+    }
+    .card img{
+        width: 100px;
+    }
+    
+    .card-container{
+        gap:1rem;
+    }
+}
+
+@media(max-width:767px){
+    nav{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+}
