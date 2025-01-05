@@ -1,0 +1,96 @@
+body{
+    line-height: 1.6;
+    margin:none;
+}
+
+.headerContainer{
+    display: flex;
+    padding: 1rem;
+    background-color: #F8FAFC;
+    gap: 3rem;
+}
+
+.logo img{
+    width: 9rem;
+    border-right: solid #213555;
+    padding-right: 2rem;
+}
+
+
+.menuContainer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding:2rem;
+}
+
+.opcionesMenu{
+    text-decoration: none;
+    color: #213555;
+    padding:1rem;
+}
+.opcionesMenu:hover{
+    background-color: #213555;
+    color: #F8FAFC;
+    border-radius: 1rem;
+}
+
+.mainContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    background-color: #D9EAFD;
+}
+
+.mainContainer h2{
+    font-weight: bold;
+    color:#213555;
+    padding: 0.5rem;
+}
+.form-label{
+    background-color: #213555;
+    color:#D9EAFD;
+    padding:1rem;
+    border-radius: 0.5rem;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #213555;
+    border: none;
+    color: #D9EAFD;
+}
+
+.btn:hover{
+    background-color: #263d61;
+}
+
+.footerContainer{
+    background-color: #9AA6B2;
+    display:flex;
+    justify-content: space-around;
+    padding:2rem;
+}
+
+@media (max-width:768px) {
+    .logo{
+        display:flex;
+        justify-content: center;
+    }
+    .logo img{
+        border:none;
+    }
+    .headerContainer{
+        display:flex;
+        flex-direction: column;
+    }
+
+}
